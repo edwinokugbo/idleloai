@@ -1,5 +1,5 @@
 """
-ASGI config for quanta project.
+ASGI config for idlelo project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'quanta.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'idlelo.settings')
 
 application = get_asgi_application()
