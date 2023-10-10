@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&cu2t8wsikk*gsvnq@4m8w@qd+0k8^%+hu6vls##(w#t6z@+x4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sandbox.com.ng', '127.0.0.1']
+ALLOWED_HOSTS = ['idlelo.com']
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
     'tailwind',
     'theme',
-    'django_browser_reload',
+    #'django_browser_reload',
 ]
 
 TAILWIND_APP_NAME = 'theme'
@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "django_browser_reload.middleware.BrowserReloadMiddleware",
+    #"django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'idlelo.urls'
@@ -86,12 +86,12 @@ WSGI_APPLICATION = 'idlelo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'idlelo_db',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'idlelo_super',
+        'PASSWORD': 'Jesusislord2024@@@',
         'HOST':'localhost',
-        'PORT':'3306',
+        'PORT':'5432',
     }
 }
 
@@ -131,10 +131,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    BASE_DIR / "static/img",
-]
+#STATICFILES_DIRS = [
+#    BASE_DIR / "static",
+#    BASE_DIR / "static/img",
+#]
+#STATIC_ROOT = '/home/idlelo/main/idleloai/staticfiles/'
 
 INTERNAL_IPS = [
     "127.0.0.1",
